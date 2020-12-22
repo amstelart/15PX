@@ -6,6 +6,8 @@
 
   $block-name: &; // #{$block-name}__element
 
+  padding-top: 0;
+
   .stat {
     &__row {
       @include row;

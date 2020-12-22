@@ -70,7 +70,8 @@
     "reviews": [],
     "partners": [],
     "certificate": [],
-    "feedback": []
+    "feedback": [],
+    "portfolio": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
