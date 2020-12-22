@@ -4,11 +4,12 @@
 
 .feedback {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   &__card {
     display: flex;
   }
+
   &__info {
     flex-basis: 40%;
     background: #E7EFF8;
@@ -17,13 +18,30 @@
     h2 {
       margin-top: 0;
     }
+
     p {
       font-size: 20px;
       line-height: 33px;
       max-width: 436px;
+      margin-bottom: 40px;
     }
   }
-  &__garant {}
+
+  &__garant {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font-family--headings;
+    position: relative;
+    padding-left: 45px;
+    max-width: 290px;
+
+    .icon {
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+  }
+
   &__form {
     flex-basis: 60%;
     background: #fff;
@@ -36,20 +54,13 @@
       line-height: 18px;
     }
   }
+
   &__form-row {
     @include row;
   }
+
   &__form-col {
     @include col();
     @include col(md, 6);
   }
-}
-
-.feedback {
-}
-.icon {
-}
-.field-text {
-  &__input-wrap {}
-  &__input {}
 }

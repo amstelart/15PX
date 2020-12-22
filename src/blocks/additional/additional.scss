@@ -4,11 +4,12 @@
 
 .additional {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   &__row {
     @include row;
   }
+
   &__card {
 
     @include col();
@@ -24,6 +25,7 @@
     }
 
     &__body {
+
       p {
         margin: 0;
         font-size: 20px;
@@ -35,10 +37,12 @@
       background: #0077E6;
       color: #fff;
     }
+
     &.dark {
       background: #28303C;
       color: #fff;
     }
+
     &.white {
       background: #fff;
     }

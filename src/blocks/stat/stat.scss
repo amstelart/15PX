@@ -4,18 +4,20 @@
 
 .stat {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   .stat {
-		&__row {
+    &__row {
       @include row;
     }
-		&__card {
+
+    &__card {
       @include col();
       @include col(md, 4);
       text-align: center;
     }
-		&__card-val {
+
+    &__card-val {
       color: #0077E5;
       font-family: 'Panton';
       font-weight: normal;
@@ -29,7 +31,8 @@
         font-weight: bold;
       }
     }
-		&__card-caption {
+
+    &__card-caption {
       margin: 0;
       font-size: 24px;
       line-height: 36px;

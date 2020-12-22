@@ -1,31 +1,43 @@
 // Этот блок ответственен ТОЛЬКО за типографику проекта.
 // Не пишите тут какую-либо стороннюю стилизацию.
 
-$gray:                        hsl(0, 0%, 50%) !default;
-$gray-lighter:                hsl(0, 0%, 80%) !default;
-$gray-lightest:               hsl(0, 0%, 90%) !default;
+$gray: hsl(0, 0%, 50%) !default;
+$gray-lighter: hsl(0, 0%, 80%) !default;
+$gray-lightest: hsl(0, 0%, 90%) !default;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif !default;
-$font-family--headings:       $font-family !default;
-$font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
+$font-family: -apple-system,
+BlinkMacSystemFont,
+'Roboto',
+'Ubuntu',
+'Droid Sans',
+'Helvetica Neue',
+'Arial',
+sans-serif !default;
+$font-family--headings: $font-family !default;
+$font-family--monospace: 'Menlo',
+'Monaco',
+'Consolas',
+'Liberation Mono',
+'Courier New',
+monospace !default;
 
-$font-size:                   14px !default;
-$font-size--h1:               2.25em !default;
-$font-size--h2:               1.875em !default;
-$font-size--h3:               1.5em !default;
-$font-size--h4:               1.25em !default;
-$font-size--h5:               1em !default;
-$font-size--h6:               1em !default;
-$font-size--small:            0.75em !default;
+$font-size: 14px !default;
+$font-size--h1: 2.25em !default;
+$font-size--h2: 1.875em !default;
+$font-size--h3: 1.5em !default;
+$font-size--h4: 1.25em !default;
+$font-size--h5: 1em !default;
+$font-size--h6: 1em !default;
+$font-size--small: 0.75em !default;
 
-$line-height:                 1.375em !default;
+$line-height: 1.375em !default;
 
-$text-color:                  hsl(0, 0%, 10%) !default;
-$border-color:                hsl(0, 0%, 60%) !default;
+$text-color: hsl(0, 0%, 10%) !default;
+$border-color: hsl(0, 0%, 60%) !default;
 
-$screen-sm:                   480px !default;
+$screen-sm: 480px !default;
 
-$border-radius:               3px !default;
+$border-radius: 3px !default;
 
 
 
@@ -42,9 +54,9 @@ $border-radius:               3px !default;
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy-SemiBold.eot');
   src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-      url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Gilroy-SemiBold.woff') format('woff'),
-      url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -53,10 +65,10 @@ $border-radius:               3px !default;
   font-family: 'Mazzard M';
   src: url('../fonts/MazzardM-Regular.eot');
   src: local('Mazzard M Regular'), local('MazzardM-Regular'),
-      url('../fonts/MazzardM-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/MazzardM-Regular.woff2') format('woff2'),
-      url('../fonts/MazzardM-Regular.woff') format('woff'),
-      url('../fonts/MazzardM-Regular.ttf') format('truetype');
+    url('../fonts/MazzardM-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MazzardM-Regular.woff2') format('woff2'),
+    url('../fonts/MazzardM-Regular.woff') format('woff'),
+    url('../fonts/MazzardM-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -65,10 +77,10 @@ $border-radius:               3px !default;
   font-family: 'Mazzard M';
   src: url('../fonts/MazzardM-Medium.eot');
   src: local('Mazzard M Medium'), local('MazzardM-Medium'),
-      url('../fonts/MazzardM-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/MazzardM-Medium.woff2') format('woff2'),
-      url('../fonts/MazzardM-Medium.woff') format('woff'),
-      url('../fonts/MazzardM-Medium.ttf') format('truetype');
+    url('../fonts/MazzardM-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MazzardM-Medium.woff2') format('woff2'),
+    url('../fonts/MazzardM-Medium.woff') format('woff'),
+    url('../fonts/MazzardM-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -77,9 +89,9 @@ $border-radius:               3px !default;
   font-family: 'Panton';
   src: url('../fonts/Panton-Bold.eot');
   src: local('Panton Bold'), local('Panton-Bold'),
-      url('../fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Panton-Bold.woff') format('woff'),
-      url('../fonts/Panton-Bold.ttf') format('truetype');
+    url('../fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Panton-Bold.woff') format('woff'),
+    url('../fonts/Panton-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -88,9 +100,9 @@ $border-radius:               3px !default;
   font-family: 'Panton';
   src: url('../fonts/Panton-Regular.eot');
   src: local('Panton Regular'), local('Panton-Regular'),
-      url('../fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Panton-Regular.woff') format('woff'),
-      url('../fonts/Panton-Regular.ttf') format('truetype');
+    url('../fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Panton-Regular.woff') format('woff'),
+    url('../fonts/Panton-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -222,7 +234,7 @@ dd {
     margin-left: 1.8em;
   }
 
-  & + dt {
+  &+dt {
     margin-top: ($line-height / 2);
   }
 }

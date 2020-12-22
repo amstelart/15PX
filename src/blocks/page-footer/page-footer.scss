@@ -4,7 +4,7 @@
 
 .page-footer {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   background: $color-blue-light;
   border-top: 1px solid $border-color;
@@ -23,9 +23,7 @@
     }
   }
 
-  &__logo {
-
-  }
+  &__logo {}
 
   &__links {
     list-style: none;
@@ -35,6 +33,7 @@
     li {
       display: inline-block;
     }
+
     a {
       display: block;
       font-size: 16px;

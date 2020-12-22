@@ -4,7 +4,7 @@
 
 .top-offer-card {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   display: flex;
   flex-direction: column;
@@ -58,17 +58,20 @@
       background: $color-main;
       text-align: center;
     }
+
     #{$block-name}__body {
       background: #fff;
 
       ul {
         display: flex;
         flex-wrap: wrap;
+
         li {
           flex-basis: 50%;
           padding-left: 42px;
           position: relative;
           margin-bottom: 35px;
+
           .icon {
             position: absolute;
             top: 5px;
@@ -99,6 +102,7 @@
         }
       }
     }
+
     #{$block-name}__body {
       background: #E7EFF8;
     }
