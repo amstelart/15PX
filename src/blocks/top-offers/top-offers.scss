@@ -1,0 +1,12 @@
+// В этом файле должны быть стили для БЭМ-блока top-offers, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.top-offer {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 0;
+  transform: translateY(-300px);
+  margin-bottom: -300px;
+}

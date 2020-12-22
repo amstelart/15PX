@@ -1,0 +1,106 @@
+// В этом файле должны быть стили для БЭМ-блока top-offer-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.top-offer-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-lg) {
+    flex-direction: row;
+  }
+
+  &__head {
+
+    flex-basis: 100%;
+    color: #fff;
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 33.3333%;
+      flex-shrink: 0;
+      padding: 58px 80px;
+    }
+  }
+
+  &__body {
+
+    flex-basis: 100%;
+
+    @media (min-width: $screen-lg) {
+      flex-basis: 33.3333%;
+      flex-grow: 1;
+      padding: 58px 80px;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p,
+  ul {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.red {
+    #{$block-name}__head {
+      background: $color-main;
+      text-align: center;
+    }
+    #{$block-name}__body {
+      background: #fff;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          flex-basis: 50%;
+          padding-left: 42px;
+          position: relative;
+          margin-bottom: 35px;
+          .icon {
+            position: absolute;
+            top: 5px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.blue {
+    #{$block-name}__head {
+      background: $color-accent;
+
+      ul {
+        li {
+          position: relative;
+          min-height: 40px;
+          padding-left: 80px;
+          margin-bottom: 34px;
+
+          .icon {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    #{$block-name}__body {
+      background: #E7EFF8;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+// В этом файле должны быть стили для БЭМ-блока stat, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.stat {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .stat {
+		&__row {
+      @include row;
+    }
+		&__card {
+      @include col();
+      @include col(md, 4);
+      text-align: center;
+    }
+		&__card-val {
+      color: #0077E5;
+      font-family: 'Panton';
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 25px;
+
+      .num {
+        font-size: 70px;
+        line-height: 1;
+        font-weight: bold;
+      }
+    }
+		&__card-caption {
+      margin: 0;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}

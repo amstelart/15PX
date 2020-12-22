@@ -1,0 +1,39 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header" role="banner">
+  <div class="page-header__inner">
+    <a href="index.html" class="page-header__logo logo"><img src="img/logo.svg" alt=""></a>
+    <nav id="main-nav" class="main-nav" role="navigation">
+      <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--active">
+          <a href="#" class="main-nav__link">
+            Отзывы
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Услуги
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Кейсы
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn btn--main">Заказать сайт</button>
+  </div>
+</header>
