@@ -1,0 +1,53 @@
+// В этом файле должны быть стили для БЭМ-блока top-offer-stat, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.top-offer-stat {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+
+  @media (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @media (min-width: $screen-lg) {
+    padding-top: 140px;
+  }
+  @media (min-width: $screen-md) {
+    padding-top: 30px;
+  }
+
+  &__item {
+    @media (max-width: ($screen-md - 1)) {
+      margin: 20px 0;
+    }
+  }
+  &__num {
+    line-height: 1;
+    color: $color-main;
+
+    @media (max-width: ($screen-md - 1)) {
+      font-size: 36px;
+    }
+    @media (min-width: $screen-md) {
+      font-size: 64px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    @media (max-width: ($screen-md - 1)) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    @media (min-width: $screen-md) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+}

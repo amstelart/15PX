@@ -35,6 +35,36 @@
         margin-bottom: 25px;
       }
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding-left: 44px;
+
+        &:before {
+          content: "";
+          width: 14px;
+          height: 14px;
+          background: $color-main;
+          position: absolute;
+          left: 0;
+          top: 12px;
+        }
+
+        @media (max-width: $screen-md - 1) {
+          padding-left: 24px;
+          &:before {
+            top: 8px;
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+    }
+
     a {
       color: $color-main;
       text-decoration: underline;

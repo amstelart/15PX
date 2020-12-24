@@ -73,7 +73,8 @@
     "feedback": [],
     "portfolio": [],
     "stage": [],
-    "case": []
+    "case": [],
+    "top-offer-stat": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

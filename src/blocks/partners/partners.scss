@@ -16,10 +16,11 @@
     @include row;
   }
 
+  &__carousel {
+
+  }
+
   &__item {
-    @include col();
-    @include col(lg, 3);
-    @include col(sm, 6);
     margin-bottom: 8px;
   }
 
