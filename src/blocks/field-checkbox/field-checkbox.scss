@@ -28,9 +28,9 @@ $line-height:                 1.375em !default;
   &__name {
     position: relative;
     display: inline-block;
-    padding-left: 1.5em;
+    padding-left: 1.7em;
     margin-right: 0.6em;
-    font-weight: 400;
+    font-weight: 500;
     line-height: $line-height;
   }
 
@@ -61,10 +61,15 @@ $line-height:                 1.375em !default;
       position: absolute;
       top: 0.1em;
       left: 0;
-      width: 14px;
-      height: 14px;
-      border: 2px solid currentColor;
-      border-radius: $border-radius;
+      width: 20px;
+      height: 20px;
+      border: 2px solid #D1E2F2;
+      border-radius: 5px;
+
+      @at-root input:checked ~ & {
+        border-color: $color-main;
+        background: $color-main;
+      }
     }
 
     @at-root input:focus ~ &:before {
@@ -74,13 +79,13 @@ $line-height:                 1.375em !default;
     &:after {
       content: '';
       position: absolute;
-      top: calc(0.1em + 1px);
+      top: calc(0.1em + 5px);
       left: 3px;
       width: 14px;
       height: 6px;
       opacity: 0;
-      border-left: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
       transform: rotate(-45deg);
       transition: opacity $transition-time;
 

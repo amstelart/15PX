@@ -30,7 +30,7 @@
   }
 
   &__title {
-    margin: 115px auto 18px auto;
+    margin: 65px auto 18px auto;
     font-family: $font-family--headings;
     font-weight: 600;
     font-size: 24px;
@@ -38,9 +38,17 @@
     max-width: 224px;
 
     @media (min-width: $screen-md) {
-      font-size: 60px;
-      line-height: 75px;
+      font-size: 48px;
+      line-height: 60px;
       max-width: 682px;
+      margin: 100px auto 22px auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 60px;
+      line-height: 72px;
+      max-width: 682px;
+      margin: 165px auto 18px auto;
     }
   }
 
@@ -56,5 +64,22 @@
       font-size: 30px;
       line-height: 44px;
     }
+  }
+
+  // @media (max-width: $screen-lg) {
+  //   height: 77.5vh;
+  //   min-height: 460px;
+  // }
+  @media (max-width: ($screen-md - 1)) {
+    height: 77.5vh;
+    min-height: 460px;
+  }
+  @media (min-width: $screen-md) {
+    height: 71vh;
+    min-height: 720px;
+  }
+  @media (min-width: $screen-lg) {
+    height: calc(100vh - 80px);
+    min-height: 840px;
   }
 }

@@ -92,5 +92,80 @@ $field-padding-horizontal:    0.7em !default;
       }
     }
   }
+
+  &--stage {
+    @include row;
+
+    .stage-num {
+      width: 55px;
+      height: 55px;
+      background: #fff;
+      color: #9AB0C7;
+      font-size: 20px;
+      line-height: 55px;
+      border: 1px solid #D1E2F2;
+      border-radius: 50%;
+      text-align: center;
+      position: absolute;
+      right: -24px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #{$block-name}__links {
+      @include col();
+      @include col(lg, 5);
+      padding-right: 0 !important;
+    }
+    #{$block-name}__content-wrapper {
+      @include col();
+      @include col(lg, 7);
+      background: #fff;
+      padding: 40px 100px 0 140px !important;
+      border: none;
+    }
+
+    #{$block-name}__link-wrap {
+      // position: relative;
+
+      &--active {
+
+        .stage-num {
+          background: #0077E6;
+          border-color: #0077E6;
+          color: #fff;
+        }
+        #{$block-name}__link {
+          color: #28303B;
+        }
+      }
+    }
+
+    #{$block-name}__links {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    #{$block-name}__link-wrap {
+      border: none;
+      background: #E7EFF8;
+      &:first-child {
+        padding-top: 40px;
+      }
+    }
+
+    #{$block-name}__link {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 30px;
+      background: transparent;
+      color: #0077E5;
+    }
+
+    #{$block-name}__content-item {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
 }
 

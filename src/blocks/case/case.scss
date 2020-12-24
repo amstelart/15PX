@@ -1,0 +1,60 @@
+// В этом файле должны быть стили для БЭМ-блока case, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.case {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 86 0 50px 0 !important;
+
+  &__content {
+    background: #fff;
+    padding: 74px 80px;
+    @media (max-width: ($screen-md - 1)) {
+      padding: 40px 22px;
+    }
+
+    h3 {
+      @media (max-width: ($screen-md - 1)) {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+
+    ul,
+    ol,
+    p {
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 40px;
+
+      @media (max-width: ($screen-md - 1)) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+    }
+    a {
+      color: $color-main;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .separator {
+      background: #D1E2F2;
+      height: 1px;
+      width: 100%;
+      margin-top: 45px;
+      margin-bottom: 40px;
+
+      @media (max-width: ($screen-md - 1)) {
+        margin-top: 35px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -71,7 +71,9 @@
     "partners": [],
     "certificate": [],
     "feedback": [],
-    "portfolio": []
+    "portfolio": [],
+    "stage": [],
+    "case": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -21,7 +21,7 @@ $transition-time:             0.3s !default;
 
   $block-name:                &; // #{$block-name}__element
 
-  position: relative;
+  // position: relative;
   z-index: 10;
 
   // первый уровень
@@ -34,28 +34,38 @@ $transition-time:             0.3s !default;
     @media (max-width: ($menu-desktop-width - 1)) {
 
       // открытие/закрытие меню только в случае работающего JS
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #fff;
 
       .js & {
         overflow: hidden;
         max-height: 0;
-        transition: max-height 0.2s;
+        padding: 0;
+        transition: all 0.2s;
       }
 
       .js #{$block-name}--open & {
         max-height: 100vh;
-        transition: max-height 0.6s;
+        padding: 60px;
+        transition: all 0.6s;
       }
     }
 
     // настольный вид списка
     @media (min-width: $menu-desktop-width) {
       display: flex;
+      height: 100%;
+      align-items: center;
       flex-wrap: wrap;
+      margin-right: 40px;
     }
   }
 
   &__item {
     position: relative;
+    margin-right: 40px;
 
     &--active {
 
@@ -63,18 +73,28 @@ $transition-time:             0.3s !default;
         color: #000;
       }
     }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+
+    }
   }
 
   &__link {
     display: block;
     padding: 0.5em;
     text-decoration: none;
-    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #28303B;
+    transition: $transition-time;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      color: $color-main;
     }
 
     &--lvl-2 {
@@ -146,8 +166,8 @@ $transition-time:             0.3s !default;
   // переключатель
 
   &__toggler {
+    flex-shrink: 0;
     display: inline-block;
-    padding: 0;
     background: none;
     border: none;
 

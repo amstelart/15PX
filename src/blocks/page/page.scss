@@ -24,6 +24,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
+    overflow: hidden;
   }
 
   &__content {
@@ -93,4 +95,17 @@ img {
 
 .nowrap {
   white-space: nowrap;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
 }

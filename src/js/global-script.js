@@ -6,6 +6,7 @@ $(document).ready(function () {
     nav: true,
     loop: true,
     center: true,
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>']
   });
   $(".certificate__carousel").owlCarousel({
     items: 4,
@@ -13,6 +14,24 @@ $(document).ready(function () {
     margin: 18,
     loop: true,
     center: false,
+    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #fff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+    responsive : {
+      0 : {
+        items: 2,
+        nav: true,
+        loop: true,
+        center: false,
+      },
+      480 : {
+        items: 2,
+      },
+      768 : {
+        items: 3,
+      },
+      992 : {
+        items: 4,
+      }
+    }
   });
 });
 

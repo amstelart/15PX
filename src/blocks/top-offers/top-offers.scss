@@ -6,7 +6,16 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 0;
-  transform: translateY(-300px);
-  margin-bottom: -300px;
+  padding: 0 !important;
+  transform: translateY(-333px);
+  margin-bottom: -333px;
+
+  @media (max-width: ($screen-md - 1)) {
+    transform: translateY(-120px);
+    margin-bottom: -120px;
+  }
+  @media (max-width: ($screen-sm - 1)) {
+    transform: translateY(-105px);
+    margin-bottom: -105px;
+  }
 }

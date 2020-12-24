@@ -6,24 +6,48 @@
 
   $block-name: &; // #{$block-name}__element
 
+  padding-bottom: 40px !important;
+
   &__card {
     display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $screen-xl) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__info {
-    flex-basis: 40%;
     background: #E7EFF8;
-    padding: 80px 45px 40px 75px;
+    padding: 40px 30px 40px 30px;
 
     h2 {
       margin-top: 0;
+
+      @media (min-width: $screen-md) {
+        font-size: 60px;
+        text-align: left;
+      }
     }
 
     p {
       font-size: 20px;
       line-height: 33px;
-      max-width: 436px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-md) {
+        max-width: 350px;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      flex-basis: 100%;
+    }
+    @media (min-width: $screen-xxl) {
+      flex-basis: 565px;
+      flex-shrink: 0;
+      padding: 80px 40px 40px 75px;
     }
   }
 
@@ -34,18 +58,37 @@
     position: relative;
     padding-left: 45px;
     max-width: 290px;
+    text-align: left;
 
     .icon {
       position: absolute;
       left: 0;
       top: 5px;
     }
+
+    @media (min-width: $screen-md) {
+      max-width: 350px;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      font-size: 12px;
+      line-height: 1.6;
+      padding-left: 36px;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 
   &__form {
-    flex-basis: 60%;
+    flex-grow: 1;
     background: #fff;
-    padding: 90px 75px;
+    padding: 35px 36px;
+    @media (min-width: $screen-md) {
+      padding: 90px 75px;
+    }
 
     p {
       margin: 0;
@@ -53,14 +96,36 @@
       font-size: 14px;
       line-height: 18px;
     }
+
   }
 
   &__form-row {
     @include row;
+
+    .action-btn {
+      order: 1;
+      margin-bottom: 20px;
+    }
+    .action-text {
+      order: 2;
+    }
+
+    @media (min-width: $screen-md) {
+      max-width: 370px;
+      margin: auto;
+    }
+    @media (min-width: $screen-lg) {
+      max-width: inherit;
+      margin: inherit;
+    }
   }
 
   &__form-col {
     @include col();
-    @include col(md, 6);
+    @include col(xxl, 6);
+  }
+
+  @media (max-width: ($screen-lg - 1)) {
+    padding-bottom: 40px;
   }
 }

@@ -7,4 +7,44 @@
   // автором пакета (см. файл настройки проекта, там подключается
   // node_modules/owl.carousel/dist/assets/owl.carousel.css).
   // Надо стилизовать — копипастить из исходника и убирать исходник из сборки.
+
+  .owl-nav {
+    position: relative;
+
+    .owl-next,
+    .owl-prev {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #0077E5 !important;
+      position: absolute;
+      bottom: -100px;
+      z-index: 100;
+      transition: $transition-time;
+
+      &:hover {
+        background: $color-main !important;
+      }
+      &:focus {
+        outline: none;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .owl-next {
+      right: 45%;
+    }
+    .owl-prev {
+      left: 45%;
+    }
+  }
+
 }

@@ -24,11 +24,11 @@ $border-radius:               5px;
   vertical-align: middle;
   user-select: none;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1em;
   font-family: inherit;
   line-height: $line-height;
   text-decoration: none;
-  text-transform: none;
+  text-transform: uppercase;
   color: $text-color;
   // border-radius: $border-radius;
   border-radius: 0;
@@ -37,6 +37,16 @@ $border-radius:               5px;
   background-image: none;
   cursor: pointer;
   transition: $transition-time;
+  position: relative;
+
+  // @media (max-width: ($screen-lg - 1)) {
+  //   font-size: 16px;
+  //   width: 100%;
+  // }
+  @media (max-width: ($screen-sm - 1)) {
+    font-size: 12px;
+    width: 100%;
+  }
 
   &:hover,
   &:focus {
@@ -64,13 +74,58 @@ $border-radius:               5px;
     }
   }
 
-  // &__icon {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  // }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+  }
 
   &--block {
     width: 100%;
+  }
+
+  &--call {
+    background-color: $color-main;
+    border: none;
+    color: #fff;
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #EB4949;
+    }
+
+    #{$block-name}__text {
+      margin-right: 40px;
+    }
+    .icon-call {
+      display: none
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      height: 50px;
+      width: 65px;
+
+      .icon-click {
+        display: none;
+      }
+      .icon-call {
+        display: block;
+      }
+      #{$block-name}__text {
+        display: none;
+      }
+    }
+    @media (min-width: $screen-md) {
+      width: 300px;
+    }
   }
 
   &--main {

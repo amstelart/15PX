@@ -10,7 +10,6 @@
   <div class="page-header__inner">
     <a href="index.html" class="page-header__logo logo"><img src="img/logo.svg" alt=""></a>
     <nav id="main-nav" class="main-nav" role="navigation">
-      <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--active">
           <a href="#" class="main-nav__link">
@@ -34,6 +33,11 @@
         </li>
       </ul>
     </nav>
-    <button class="btn btn--main">Заказать сайт</button>
+    <button class="btn btn--call" data-toggle="modal" data-target="#modal-request">
+      <span class="btn__text">Заказать сайт</span>
+      <svg class="icon-click icon" width="28" height="28"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#click-icon"></use></svg>
+      <svg class="icon-call icon" width="14" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#call-icon"></use></svg>
+    </button>
+    <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
   </div>
 </header>

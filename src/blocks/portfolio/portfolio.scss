@@ -6,7 +6,11 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding: 0;
+  padding: 0 !important;
+
+  @media (min-width: $screen-xl) {
+
+  }
 
   &__grid {
     display: grid;

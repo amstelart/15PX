@@ -6,15 +6,30 @@
 
   $block-name: &; // #{$block-name}__element
 
+  padding-top: 0;
+
   &__row {
-    @include row;
+    display: flex;
+    flex-wrap: wrap
   }
 
   &__card {
-    @include col();
-    @include col(md, 4);
 
-    padding: 70px !important;
+    text-align: center;
+    padding: 37px;
+    flex-basis: 100%;
+
+    @media (min-width: $screen-md) {
+      padding: 56px 80px;
+    }
+    @media (min-width: $screen-xl) {
+      flex-basis: 33.333%;
+      padding: 56px 45px;
+    }
+    @media (min-width: $screen-xxl) {
+      padding: 70px;
+      padding: 56px 80px;
+    }
 
     &.red {
       color: #fff;
@@ -38,6 +53,15 @@
 
     h3 {
       margin: 0;
+
+      // @media (max-width: ($screen-lg - 1)) {
+      //   font-size: 22px;
+      //   line-height: 32px;
+      // }
+    }
+
+    @media (max-width: ($screen-xl - 1)) {
+      min-height: auto;
     }
   }
 
@@ -49,8 +73,20 @@
       margin: 0;
       font-size: 20px;
       line-height: 30px;
+
+      @media (max-width: ($screen-sm - 1)) {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: ($screen-xl - 1)) {
+      min-height: auto;
     }
   }
 
   &__card-action {}
+
+  @media (max-width: ($screen-xxl - 1)) {
+    padding-bottom: 40px;
+  }
 }

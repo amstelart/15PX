@@ -10,19 +10,29 @@
 
   &__row {
     @include row;
+
+    @media (max-width: ($screen-lg - 1)) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 
   &__card {
 
     @include col();
-    @include col(md, 4);
-    padding: 85px 80px !important;
+    @include col(xl, 4);
+    padding: 35px 30px !important;
+    text-align: center;
 
     &__head {
       margin-bottom: 25px;
 
       h3 {
         margin: 0;
+
+        @media (max-width: ($screen-md - 1)) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -32,6 +42,14 @@
         margin: 0;
         font-size: 20px;
         line-height: 30px;
+      }
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
       }
     }
 
@@ -48,5 +66,13 @@
     &.white {
       background: #fff;
     }
+
+    @media (min-width: $screen-md) {
+      padding: 85px 80px !important;
+    }
+  }
+
+  @media (max-width: ($screen-lg - 1)) {
+    padding-bottom: 40px;
   }
 }

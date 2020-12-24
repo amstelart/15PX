@@ -27,3 +27,63 @@
 </div>
 
 -->
+
+<div id="modal-request" class="modal modal--request" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <form class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        <h4 class="modal__title">Заказать сайт</h4>
+      </div>
+      <div class="modal__body">
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
+          </span>
+        </label>
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="tel" placeholder="+ 7" id="" name="">
+          </span>
+        </label>
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <textarea class="field-text__input" type="text" rows="9" placeholder="Описание сайта" id="" name=""></textarea>
+          </span>
+        </label>
+        <div class="field-checkbox">
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+              <span class="field-checkbox__name-text">Установить на Битрикс</span>
+            </label>
+          </div>
+          <div class="field-checkbox__input-wrap">
+            <label class="field-checkbox__name">
+              <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+              <span class="field-checkbox__name-text">Подключить CRM</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <button type="button" class="btn btn--block btn--main" data-dismiss="modal" data-toggle="modal" data-target="#modal-message">Отправить</button>
+        <p>Нажимая на кнопку «Отправить», я даю согласиена обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="modal-message" class="modal modal--message" tabindex="-1" role="dialog">
+  <div class="modal__dialog" role="document">
+    <form class="modal__content">
+      <div class="modal__header">
+        <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+      </div>
+      <div class="modal__body">
+        <svg class="modal__icon icon" width="78" height="78"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#confirmation"></use></svg>
+        <h3 class="modal__title">Запрос успешно <br> отправлен!</h3>
+      </div>
+    </form>
+  </div>
+</div>

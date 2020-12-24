@@ -15,8 +15,12 @@
 
     &__card {
       @include col();
-      @include col(md, 4);
+      @include col(xl, 4);
       text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     &__card-val {
@@ -32,12 +36,32 @@
         line-height: 1;
         font-weight: bold;
       }
+
+      @media (max-width: ($screen-md - 1)) {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        .num {
+          font-size: 40px;
+          margin-right: 5px;
+        }
+      }
     }
 
     &__card-caption {
       margin: 0;
       font-size: 24px;
+      font-weight: 500;
       line-height: 36px;
+
+      @media (max-width: ($screen-lg - 1)) {
+        font-size: 18px;
+        line-height: 1.4;
+      }
     }
+  }
+
+  @media (max-width: ($screen-lg - 1)) {
+    padding-bottom: 60px;
   }
 }
