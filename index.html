@@ -2,7 +2,7 @@
 <html class="no-js  page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>15PX</title>
   <meta name="description" content>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -48,7 +48,6 @@
         <div class="page-header__inner">
           <a href="index.html" class="page-header__logo logo"><img src="img/logo.svg" alt></a>
           <nav id="main-nav" class="main-nav" role="navigation">
-            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item  main-nav__item--active">
                 <a href="#" class="main-nav__link">
@@ -72,7 +71,12 @@
               </li>
             </ul>
           </nav>
-          <button class="btn btn--main">Заказать сайт</button>
+          <button class="btn btn--call" data-toggle="modal" data-target="#modal-request">
+            <span class="btn__text">Заказать сайт</span>
+            <svg class="icon-click icon" width="28" height="28"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#click-icon"/></svg>
+            <svg class="icon-call icon" width="14" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#call-icon"/></svg>
+          </button>
+          <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
         </div>
       </header>
       <main role="main">
@@ -112,7 +116,7 @@
               <div class="top-offer-card__head">
                 <h3>Заказать консультацию</h3>
                 <p>Я расскажу, как происходит создание сайта и от чего нужно отталкиваться, а так же отвечу на все ваши вопросы</p>
-                <button class="btn">Оставить заявку  </button>
+                <button class="btn btn--white-outline">Оставить заявку  </button>
               </div>
             </div>
             <div class="top-offer-card blue">
@@ -133,7 +137,7 @@
                   </li>
                   <li>
                     <svg class="icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#to-icon-04"/></svg>
-                    подключу системы аналитики
+                    подключу системы <br> аналитики
                   </li>
                 </ul>
               </div>
@@ -166,10 +170,71 @@
             </div>
           </div>
         </section>
-        <section class="section stage">
+        <section class="section stage" style>
           <div class="section__inner">
             <div class="section__head">
               <h2 class="section__title">Этапы разработки сайта</h2>
+            </div>
+          </div>
+          <div class="stage__inner">
+            <div class="tabs tabs--stage">
+              <ul class="tabs__links" role="tablist">
+                <li class="tabs__link-wrap tabs__link-wrap--active" role="presentation">
+                  <a href="#stage-01" class="tabs__link" data-toggle="tab" role="tab">
+                    Анализ ниши, целевой аудитории, конкурентов
+                    <div class="stage-num">1</div>
+                  </a>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <span data-target="#stage-02" class="tabs__link" data-toggle="tab" role="tab">Предложение вариантоа сайтов</span>
+                  <div class="stage-num">2</div>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#stage-03" class="tabs__link" data-toggle="tab" role="tab">Заключение договора</a>
+                  <div class="stage-num">3</div>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#stage-04" class="tabs__link" data-toggle="tab" role="tab">Разработка дизайна сайта</a>
+                  <div class="stage-num">4</div>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#stage-05" class="tabs__link" data-toggle="tab" role="tab">Верстка макетов сайта</a>
+                  <div class="stage-num">5</div>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#stage-06" class="tabs__link" data-toggle="tab" role="tab">Программирование</a>
+                  <div class="stage-num">6</div>
+                </li>
+                <li class="tabs__link-wrap" role="presentation">
+                  <a href="#stage-07" class="tabs__link" data-toggle="tab" role="tab">Размещение сайта в сети</a>
+                  <div class="stage-num">7</div>
+                </li>
+              </ul>
+              <div class="tabs__content-wrapper">
+                <div class="tabs__content-item tabs__content-item--active" id="stage-01" role="tabpanel">
+                  <p>Производим анализ ниши, разбираем сильные и слабые стороны сайтов конкурентов. Разрабатываем структуру сайта.</p>
+                  <h5>Результат и сроки</h5>
+                  <p>Производим анализ ниши, разбираем сильные и слабые стороны сайтов конкурентов. Разрабатываем структуру сайта.</p>
+                </div>
+                <div class="tabs__content-item" id="stage-02" role="tabpanel">
+                  222
+                </div>
+                <div class="tabs__content-item" id="stage-03" role="tabpanel">
+                  333
+                </div>
+                <div class="tabs__content-item" id="stage-04" role="tabpanel">
+                  444
+                </div>
+                <div class="tabs__content-item" id="stage-05" role="tabpanel">
+                  555
+                </div>
+                <div class="tabs__content-item" id="stage-06" role="tabpanel">
+                  666
+                </div>
+                <div class="tabs__content-item" id="stage-07" role="tabpanel">
+                  777
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -182,13 +247,13 @@
             <div class="offers__row">
               <div class="offers__card red">
                 <div class="offers__card-heade">
-                  <h3>Интернет-магазины на платформе 1С-Битрикс</h3>
+                  <h3>Интернет-магазины на платформе <span class="nowrap">1С-Битрикс</span></h3>
                 </div>
                 <div class="offers__card-body">
                   <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</p>
                 </div>
                 <div class="offers__card-action">
-                  <button class="btn">Оставить заявку</button>
+                  <button class="btn btn--white-outline btn--block">Оставить заявку</button>
                 </div>
               </div>
               <div class="offers__card white">
@@ -199,7 +264,7 @@
                   <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</p>
                 </div>
                 <div class="offers__card-action">
-                  <button class="btn">Оставить заявку</button>
+                  <button class="btn btn--blue-outline btn--block">Оставить заявку</button>
                 </div>
               </div>
               <div class="offers__card blue">
@@ -210,15 +275,43 @@
                   <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного</p>
                 </div>
                 <div class="offers__card-action">
-                  <button class="btn">Оставить заявку</button>
+                  <button class="btn btn--white-outline btn--block">Оставить заявку</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section class="section portfolio">
-          <div class="section__inner">
-            <p>Портфолио</p>
+          <div class="portfolio__grid">
+            <div class="portfolio__head">
+              <h2>Портфолио</h2>
+              <p>За 10 лет работы накопилось большое количество сделанных сайтов, некоторые из них представлены в моем портфолио</p>
+              <div class="btn btn--white-outline">СМОТРЕТЬ ВСЕ РАБОТЫ</div>
+            </div>
+            <div class="portfolio__gallery">
+              <div class="group">
+                <div class="portfolio__card portfolio__card-1">
+                  <a href="#" class="portfolio__img-wrap">
+                    <img class="portfolio__img" src="img/portfolio-img-01.jpg" alt>
+                  </a>
+                </div>
+                <div class="portfolio__card portfolio__card-2">
+                  <a href="#" class="portfolio__img-wrap">
+                    <img class="portfolio__img" src="img/portfolio-img-02.jpg" alt>
+                  </a>
+                </div>
+                <div class="portfolio__card portfolio__card-3">
+                  <a href="#" class="portfolio__img-wrap">
+                    <img class="portfolio__img" src="img/portfolio-img-03.jpg" alt>
+                  </a>
+                </div>
+              </div>
+              <div class="portfolio__card portfolio__card-4">
+                <a href="#" class="portfolio__img-wrap">
+                  <img class="portfolio__img" src="img/portfolio-img-04.jpg" alt>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
         <section class="section feedback">
@@ -261,11 +354,11 @@
                   </div>
                 </div>
                 <div class="feedback__form-row">
-                  <div class="feedback__form-col">
+                  <div class="feedback__form-col action-text">
                     <p>Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
                   </div>
-                  <div class="feedback__form-col">
-                    <button class="btn" type="submit">Отправить сообщение</button>
+                  <div class="feedback__form-col action-btn">
+                    <button class="btn btn--block btn--main" type="submit">Отправить сообщение</button>
                   </div>
                 </div>
               </form>
@@ -281,26 +374,26 @@
             <div class="additional__row">
               <div class="additional__card blue">
                 <div class="additional__card__head">
-                  <h3>Доработка сайтов на 1С-Битрикс</h3>
+                  <h3>Доработка сайтов <br> на 1С-Битрикс</h3>
                 </div>
                 <div class="additional__card__body">
-                  <p>Любые доработки сайтов на 1С-Битрикс, а так же разработка модулей именно под ваши задачи</p>
+                  <p>Любые доработки сайтов на <br> 1С-Битрикс, а так же разработка <br> модулей именно под ваши задачи</p>
                 </div>
               </div>
               <div class="additional__card dark">
                 <div class="additional__card__head">
-                  <h3>Добавление ApplePay на сайт</h3>
+                  <h3>Добавление <br> ApplePay на сайт</h3>
                 </div>
                 <div class="additional__card__body">
-                  <p>ApplePay современный и очень удобный способ оплаты в интернете</p>
+                  <p>ApplePay современный и очень удобный способ <br> оплаты в интернете</p>
                 </div>
               </div>
               <div class="additional__card white">
                 <div class="additional__card__head">
-                  <h3>Ежемесечная поддержка сайтов</h3>
+                  <h3>Ежемесечная <br> поддержка сайтов</h3>
                 </div>
                 <div class="additional__card__body">
-                  <p>Оперативно отвечаю на вопросы связанные с вашим сайтом</p>
+                  <p>Оперативно отвечаю на вопросы <br> связанные с вашим сайтом</p>
                 </div>
               </div>
             </div>
@@ -337,7 +430,29 @@
               <div class="reviews__item">
                 <div class="reviews__caption">
                   <h2>Интернет-магазин доставки цветов</h2>
-                  <a href="#" class="btn" target="_blank">MAKILOVE.ru</a>
+                  <a href="#" class="btn btn--blue-outline" target="_blank">MAKILOVE.RU</a>
+                  <p>День рождения, свадьба, рождение ребенка – в жизни столько событий, когда хочется порадовать родных, близких и заказать свежие цветы.</p>
+                  <p>Салон Makilove предлагает огромный выбор букетов и флористических композиций для любой ситуации. У нас вы можете бесплатно заказать доставку букетов цветов в Челябинске.</p>
+                </div>
+                <div class="reviews__image">
+                  <img src="img/makilove.jpg" alt>
+                </div>
+              </div>
+              <div class="reviews__item">
+                <div class="reviews__caption">
+                  <h2>Интернет-магазин доставки цветов</h2>
+                  <a href="#" class="btn btn--blue-outline" target="_blank">MAKILOVE.RU</a>
+                  <p>День рождения, свадьба, рождение ребенка – в жизни столько событий, когда хочется порадовать родных, близких и заказать свежие цветы.</p>
+                  <p>Салон Makilove предлагает огромный выбор букетов и флористических композиций для любой ситуации. У нас вы можете бесплатно заказать доставку букетов цветов в Челябинске.</p>
+                </div>
+                <div class="reviews__image">
+                  <img src="img/makilove.jpg" alt>
+                </div>
+              </div>
+              <div class="reviews__item">
+                <div class="reviews__caption">
+                  <h2>Интернет-магазин доставки цветов</h2>
+                  <a href="#" class="btn btn--blue-outline" target="_blank">MAKILOVE.RU</a>
                   <p>День рождения, свадьба, рождение ребенка – в жизни столько событий, когда хочется порадовать родных, близких и заказать свежие цветы.</p>
                   <p>Салон Makilove предлагает огромный выбор букетов и флористических композиций для любой ситуации. У нас вы можете бесплатно заказать доставку букетов цветов в Челябинске.</p>
                 </div>
@@ -386,6 +501,27 @@
               <div class="certificate__item">
                 <img src="img/certificat.jpg" alt class="certificate__image">
               </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
+              <div class="certificate__item">
+                <img src="img/certificat.jpg" alt class="certificate__image">
+              </div>
             </div>
           </div>
         </section>
@@ -405,6 +541,64 @@
           <div class="page-footer__copyright">2015-2020&nbsp;&copy;&nbsp;Digital.agency</div>
         </div>
       </footer>
+    </div>
+  </div>
+  <div id="modal-request" class="modal modal--request" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <form class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+          <h4 class="modal__title">Заказать сайт</h4>
+        </div>
+        <div class="modal__body">
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="text" placeholder="Ваше имя" id name>
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="tel" placeholder="+ 7" id name>
+            </span>
+          </label>
+          <label class="field-text">
+            <span class="field-text__input-wrap">
+              <textarea class="field-text__input" type="text" rows="9" placeholder="Описание сайта" id name></textarea>
+            </span>
+          </label>
+          <div class="field-checkbox">
+            <div class="field-checkbox__input-wrap">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id name checked>
+                <span class="field-checkbox__name-text">Установить на Битрикс</span>
+              </label>
+            </div>
+            <div class="field-checkbox__input-wrap">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id name checked>
+                <span class="field-checkbox__name-text">Подключить CRM</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <button type="button" class="btn btn--block btn--main" data-dismiss="modal" data-toggle="modal" data-target="#modal-message">Отправить</button>
+          <p>Нажимая на кнопку «Отправить», я даю согласиена обработку персональных данных и соглашаюсь c политикой конфиденциальности</p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="modal-message" class="modal modal--message" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <form class="modal__content">
+        <div class="modal__header">
+          <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+        </div>
+        <div class="modal__body">
+          <svg class="modal__icon icon" width="78" height="78"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#confirmation"/></svg>
+          <h3 class="modal__title">Запрос успешно <br> отправлен!</h3>
+        </div>
+      </form>
     </div>
   </div>
   <script src="js/script.min.js"></script>
