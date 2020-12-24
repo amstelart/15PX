@@ -71,6 +71,8 @@ $(document).ready(function () {
       top = $(id).offset().top;
 
     //анимируем переход на расстояние - top за 1500 мс
+    $('#main-nav-toggler').removeClass("burger--close")
+    $('#main-nav').removeClass("main-nav--open")
     $('body,html').animate({ scrollTop: top }, 1500);
   });
 });
