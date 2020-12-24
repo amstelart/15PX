@@ -6,7 +6,9 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__carousel {}
+  &__carousel {
+    padding-bottom: 80px;
+  }
 
   &__item {
     background: #fff;

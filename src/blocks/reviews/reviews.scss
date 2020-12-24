@@ -10,7 +10,9 @@
   padding-top: 75px;
   padding-bottom: 0;
 
-  &__carousel {}
+  &__carousel {
+    padding-bottom: 100px;
+  }
 
   &__item {
     display: flex;

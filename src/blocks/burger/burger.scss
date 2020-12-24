@@ -2,8 +2,8 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-$toggler-part-height:         3px !default;
-$toggler-part-bg-color:       #000 !default;
+$toggler-part-height:         2px;
+$toggler-part-bg-color:       #28303B;
 
 .burger {
 
@@ -75,7 +75,7 @@ $toggler-part-bg-color:       #000 !default;
   }
 
   @media (max-width: ($screen-md - 1)) {
-    width: 65px;
+    width: 54px;
     height: 50px;
   }
 }

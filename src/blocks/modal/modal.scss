@@ -120,7 +120,11 @@ $z-index-modal:               100 !default;
 
   &--request {
     #{$block-name}__content {
-      padding: 30px 76px;
+      padding: 30px 15px;
+
+      @media (min-width: $screen-lg) {
+        padding: 30px 76px;
+      }
     }
     #{$block-name}__title {
       font-weight: 500;
@@ -132,8 +136,11 @@ $z-index-modal:               100 !default;
 
   &--message {
     #{$block-name}__content {
-      padding: 30px 76px;
+      padding: 30px 15px;
       text-align: center;
+      @media (min-width: $screen-lg) {
+        padding: 30px 76px;
+      }
     }
     #{$block-name}__title {
       font-weight: 500;

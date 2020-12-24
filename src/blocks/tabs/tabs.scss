@@ -110,6 +110,10 @@ $field-padding-horizontal:    0.7em !default;
       right: -24px;
       top: 50%;
       transform: translateY(-50%);
+
+      @media (max-width: ($screen-lg - 1)) {
+        display: none;
+      }
     }
 
     #{$block-name}__links {
@@ -123,10 +127,14 @@ $field-padding-horizontal:    0.7em !default;
       background: #fff;
       padding: 40px 100px 0 140px !important;
       border: none;
+
+      @media (max-width: ($screen-lg - 1)) {
+        padding: 60px 30px !important;
+      }
     }
 
     #{$block-name}__link-wrap {
-      // position: relative;
+      padding: 0.9375em 2.0625em;
 
       &--active {
 
@@ -149,17 +157,51 @@ $field-padding-horizontal:    0.7em !default;
     #{$block-name}__link-wrap {
       border: none;
       background: #E7EFF8;
+      text-align: center;
+
+      @media (min-width: $screen-lg) {
+        padding-right: 60px;
+        text-align: left;
+      }
+      @media (min-width: $screen-xl) {
+        padding-right: 100px;
+      }
+      @media (min-width: $screen-xxl) {
+        padding-right: 200px;
+      }
+
       &:first-child {
         padding-top: 40px;
+      }
+      &:last-child {
+        padding-bottom: 40px;
       }
     }
 
     #{$block-name}__link {
       font-weight: 500;
-      font-size: 26px;
-      line-height: 30px;
+      font-size: 22px;
+      line-height: 1.4;
       background: transparent;
       color: #0077E5;
+      padding: 0;
+      display: inline;
+      border-bottom: 1px dashed #0077E5;
+
+      &:hover {
+        color: $color-main;
+        border-color: $color-main;
+      }
+
+      @media (min-width: $screen-xl) {
+        font-size: 26px;
+        line-height: 30px;
+      }
+      @media (max-width: ($screen-lg - 1)) {
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+      }
     }
 
     #{$block-name}__content-item {
