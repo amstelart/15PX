@@ -8,10 +8,17 @@
 
   background: #fff;
   padding-top: 75px;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 
   &__carousel {
-    padding-bottom: 100px;
+    &.owl-carousel .owl-nav .owl-next,
+    &.owl-carousel .owl-nav .owl-prev {
+      bottom: -140px;
+
+      @media (max-width: ($screen-md - 1)) {
+        bottom: -100px;
+      }
+    }
   }
 
   &__item {

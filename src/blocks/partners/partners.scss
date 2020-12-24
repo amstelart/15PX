@@ -6,7 +6,11 @@
 
   $block-name: &; // #{$block-name}__element
 
-  padding-bottom: 0;
+  padding-top: 200px !important;
+  padding-bottom: 0 !important;
+  @media (max-width: ($screen-md - 1)) {
+    padding-top: 150px !important;
+  }
 
   &__row {
     @include row;
